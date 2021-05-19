@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#form-section{
+margin-top: 12%;
+margin-bottom: 8%;
+overflow: scroll;
+height: 100vh;
+font-family: 'Courgette', cursive;
+
+}
+
+.form-heading{
+    text-align: center;
+    padding: 8% 7%;
+    font-family:'Caveat' ,cursive ;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 15%;
+}
+
+.form{
+    border: 2px solid #242424;
+    padding-top:2% ;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-bottom: 8%;
+    box-shadow: 1px 1px 28px 13px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px 1px 28px 13px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 28px 13px rgba(0,0,0,0.75);
+    position: absolute;
+    right: 30%;
+  
+}
+.form input{
+    width: 20rem;
+    -webkit-transition: width .35s ease-in-out;
+    transition: width .35s ease-in-out;
+}
+.form-group{
+    margin-bottom: 8%;
+}
+
+
+/* #email1,#fullName,#phoneNumber,#address,#password{
+    width: 50%;
+} */
+
+.button{
+  display: inline-flex;
+  justify-content: space-evenly;
+  position: relative;
+ 
+ 
+}

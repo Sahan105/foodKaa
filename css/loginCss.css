@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#headfirst{
+background-color: #2e2d2d;
+display: flex;
+justify-content: space-between;
+padding: 0 10%;
+font-size: 1rem;
+}
+#headfirst #bNav{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.textF{
+    color: #eee;
+}
+.fontA{
+    padding: 0 5px;
+    color: #bd2626;
+    font-size: 1.8rem;
+    position: relative;
+   top: 20%;
+}
+.logo{
+    font-size: 1.5rem;
+}
+.navbar-brand{
+    font-family:'Bangers' ,cursive ;
+    font-size:2.5rem;
+}
+#navbar{
+    padding: 0 15%;
+    font-size: 1.5rem;
+    font-family: 'Courgette', cursive;
+}
+#navbar ul li a:hover{
+    color: #eee;
+    
+}
+.search{
+  position: relative;
+  left: 25%;
+  display: flex;
+  justify-content: space-between;
+}
+.search .form-control{
+  width: 20rem;
+}
+#headSecond{
+    background-color: #2e2d2d;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;  
+    padding-left: 15%;
+    font-size: 1rem;
+   
+}
+
+#headSecond a{
+    color: #eee;
+}
+.form-section{
+    padding: 5% 10%;
+    position: relative;
+    overflow: scroll;
+    height: 100vh;
+    font-family: 'Courgette', cursive;
+
+}
+
+.form-heading{
+    text-align: center;
+    padding: 6% 5%;
+    font-family:'Caveat' ,cursive ;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.form{
+    border: 2px solid #242424;
+    padding:4% 10%;
+    box-shadow: 1px 1px 28px 13px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px 1px 28px 13px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 28px 13px rgba(0,0,0,0.75);
+    position: absolute;
+    right: 30%;
+  
+}
+.form-group input{
+    width: 20rem;
+}
+
+#buttonB{
+  display: inline-flex;
+  justify-content: space-evenly;
+  position: relative;
+ 
+ 
+}
+.btn1 {
+	background-color:#3a3b3a;
+	border:1px solid #1c1d1c;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:1.1rem;
+	padding:9px 138px;
+	text-decoration:none;
+  
+}
+#fPassword{
+font-size: 1.2rem;
+}
+#aPass{
+    position: relative;
+    padding-top: 5%;
+    font-size: 1.5rem;
+}
