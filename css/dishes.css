@@ -1,0 +1,323 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Goblin+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#headfirst {
+  background-color: #2e2d2d;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10%;
+  font-size: 1rem;
+}
+#headfirst #bNav {
+  display: flex;
+  justify-content: space-between;
+}
+.textF {
+  color: #eee;
+}
+.logo {
+  font-size: 1.5rem;
+}
+.fontA {
+  padding: 0 5px;
+  color: #bd2626;
+  font-size: 1.8rem;
+  position: relative;
+  top: 20%;
+}
+.navbar-brand {
+  font-family: "Bangers", cursive;
+  font-size: 2.5rem;
+}
+#navbar {
+  padding: 0 15%;
+  font-size: 1.5rem;
+  font-family: "Courgette", cursive;
+}
+#navbar ul li a {
+  color: #e0e0e0;
+}
+#navbar ul li a:hover {
+  color: #555555;
+}
+
+#headSecond {
+  background-color: #2e2d2d;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 15%;
+  font-size: 1.5rem;
+  font-family: "Playfair Display", cursive;
+}
+#headSecond a {
+  color: #eee;
+}
+#product-section {
+  overflow-x: hidden;
+  background-color: #e9e9e9;
+}
+
+#product-section h1 {
+  font-size: 4rem;
+  margin: 0 auto;
+  padding-bottom: 6%;
+  font-family: "Courgette", cursive;
+}
+/* UTILITY */
+.p-small {
+  padding-bottom: 5px;
+}
+.p-medium {
+  padding-bottom: 10px;
+}
+.p-y {
+  padding: 10px 0;
+}
+.m-y {
+  margin: 10px 0;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+.filter-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+#search-box {
+  margin: 5% 0;
+  font-size: 20px;
+  position: relative;
+  left: 35%;
+}
+#search-box input {
+  width: 15rem;
+  margin-left: 3%;
+  -webkit-transition: width 0.35s ease-in-out;
+  transition: width 0.35s ease-in-out;
+  border: none;
+}
+#search-box input:focus {
+  width: 20rem;
+  outline: none;
+  outline: none !important;
+  border: 1px solid #2e2d2d;
+  box-shadow: 0 0 10px #719ece;
+}
+.slide-container {
+  overflow-y: hidden;
+}
+
+#store-products {
+  display: grid;
+  padding: 2% 5%;
+  grid-template-columns: repeat(4, 1fr);
+  overflow-y: hidden;
+  transition: all 0.5s ease-in-out;
+}
+#product-section img {
+  width: 298px;
+  height: 200px;
+  background-size: cover;
+}
+
+.store-product {
+  border: 1px solid #eee;
+  border-radius: 3px;
+  max-width: 300px;
+  margin: 2% 0;
+}
+
+.product-details {
+  text-align: center;
+  padding-bottom: 1rem;
+  background-color: #2e2d2d;
+  color: #e9e9e9;
+}
+/* buttonsss */
+#fullLable {
+  margin-right: 10%;
+}
+#qtyBox {
+  width: 3rem;
+}
+#button {
+  margin-top: 7%;
+}
+#button .sub {
+  padding: 0 1%;
+}
+
+/* buttons */
+
+.product-details h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.product-details p {
+  font-size: 1rem;
+  padding-bottom: 1rem;
+  color: green;
+  font-weight: 700;
+}
+
+.product-details p span {
+  text-decoration: line-through;
+  color: red;
+  font-weight: normal;
+}
+
+.product-details a {
+  font-size: 1rem;
+  text-decoration: none;
+  background-color: var(--color-sec);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+}
+#cartCounter {
+  display: flex;
+  color: #eee;
+  border-radius: 20%;
+  align-items: center;
+  font-family: sans-serif;
+  justify-content: center;
+  font-size: 1rem;
+  position: absolute;
+  top: 8px;
+  right: 15%;
+}
+/* footer */
+.new_footer_area {
+  background: #2e2d2d;
+}
+
+.new_footer_top {
+  padding: 5% 15%;
+  position: relative;
+  overflow-x: hidden;
+  text-align: center;
+}
+.f-title .f_list li {
+  color: #eee;
+}
+.f-title {
+  color: #eee;
+}
+#sub {
+  position: relative;
+  left: -35%;
+  margin: 2%;
+}
+.new_footer_top .company_widget p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+  color: #eee;
+  margin-bottom: 20px;
+}
+.new_footer_top .company_widget .f_subscribe_two .btn_get {
+  border-width: 1px;
+  margin-top: 20px;
+}
+.new_footer_top .f_widget.about-widget .f_list li {
+  margin-bottom: 11px;
+}
+.f_widget.about-widget .f_list li:last-child {
+  margin-bottom: 0px;
+}
+.f_widget.about-widget .f_list li {
+  margin-bottom: 15px;
+}
+.f_widget.about-widget .f_list {
+  margin-bottom: 0px;
+}
+.container {
+  padding-bottom: 3%;
+}
+
+.new_footer_top .f_widget.about-widget .f_list li a {
+  color: #e9e9e9;
+}
+.new_footer_top .f_widget.about-widget .f_list li {
+  color: #e9e9e9;
+}
+
+.new_footer_top .footer_bg {
+  position: absolute;
+  bottom: 0;
+  background: url("http://droitthemes.com/html/saasland/img/seo/footer_bg.png")
+    no-repeat scroll center 0;
+  width: 100%;
+  height: 266px;
+}
+
+.new_footer_top .footer_bg .footer_bg_one {
+  background: url("https://1.bp.blogspot.com/-mvKUJFGEc-k/XclCOUSvCnI/AAAAAAAAUAE/jnBSf6Fe5_8tjjlKrunLBXwceSNvPcp3wCLcBGAsYHQ/s1600/volks.gif")
+    no-repeat center center;
+  width: 330px;
+  height: 105px;
+  background-size: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+  -webkit-animation: myfirst 22s linear infinite;
+  animation: myfirst 22s linear infinite;
+}
+
+.new_footer_top .footer_bg .footer_bg_two {
+  background: url("https://1.bp.blogspot.com/-hjgfxUW1o1g/Xck--XOdlxI/AAAAAAAAT_4/JWYFJl83usgRFMvRfoKkSDGd--_Sv04UQCLcBGAsYHQ/s1600/cyclist.gif")
+    no-repeat center center;
+  width: 88px;
+  height: 100px;
+  background-size: 100%;
+  bottom: 0;
+  left: 38%;
+  position: absolute;
+  -webkit-animation: myfirst 30s linear infinite;
+  animation: myfirst 30s linear infinite;
+}
+
+@-moz-keyframes myfirst {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes myfirst {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes myfirst {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/*************footer End*****************/

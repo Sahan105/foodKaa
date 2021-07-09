@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <!-- font-awesome -->
+    <!-- AOS link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./fontawesome/all.min.css" />
     <link rel="stylesheet" href="./fontawesome/fontawesome.min.css" />
     <!-- sweetalert2.css link -->
@@ -22,6 +24,7 @@
     <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
   </head>
   <body>
+    <header>
     <nav class="navbar navbar-expand-lg" id="headfirst">
       <div id="bNav">
         <a class="nav-link" href="#"
@@ -33,9 +36,9 @@
           ><span class="textF">support@foodka.com</span></a
         >
       </div>
-      <div>
+      <div id="snav" class="">
         <ul class="navbar-nav">
-          <li class="nav-item active">
+          <li class="nav-item ">
             <a class="nav-link" href="#"
               ><i class="fab fa-facebook logo"></i
             ></a>
@@ -55,7 +58,7 @@
       class="navbar navbar-expand-lg navbar-light bg-dark sticky-top"
       id="navbar"
     >
-      <a class="navbar-brand" href="index.html">fooKa</a>
+      <a class="navbar-brand" href="index.html">foodKa</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -71,7 +74,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">About-Us</a>
+            <a class="nav-link" href="dishes.html">Dishes</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact">Cotact</a>
@@ -80,9 +83,10 @@
             <a class="nav-link" href="adminLogin.html">Admin</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"
+            <a class="nav-link" href=""
               ><i class="fas fa-shopping-cart"></i
             ></a>
+            <span id="cartCounter">0</span>
           </li>
         </ul>
       </div>
@@ -100,32 +104,38 @@
         </li>
       </ul>
     </nav>
+  </header>
     <!-- banner section -->
     <div class="swiper-container">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
         <!-- Slides -->
-        <div class="swiper-slide bg-dark">
-          <div id="phoyo">
-            <div class="foodi1">Food</div>
-            <div class="foodiP1 element1"></div>
-          </div>
-          <div><img src="./images/home-removebg-preview.png" alt="" /></div>
+        <div class="swiper-slide item1">
+           <div class="wrapper1">
+                    <div class="header-content">
+                        <h1 class="header-title"> FOOD</h1>
+                        <p class="header-sub-title">that you can resist</p>
+                    </div> <!-- /.header-content -->
+                </div>
+
         </div>
-        <div class="swiper-slide bg-dark">
-          <div id="phoyo">
-            <div class="foodi2">Beyond</div>
-            <div class="foodiP2">the boundaries of taste</div>
-          </div>
-          <div><img src="./images/p10-removebg-preview.png" alt="" /></div>
+        <div class="swiper-slide item2 ">
+                <div class="wrapper2">
+                    <div class="header-content">
+                        <h1 class="header-title">BEST FOOD</h1>
+                        <p class="header-sub-title">create your own slogan</p>
+                    </div> <!-- /.header-content -->
+                </div>
+            
         </div>
 
-        <div class="swiper-slide bg-dark">
-          <div id="phoyo">
-            <div class="foodi4">If gluttony is a sin,</div>
-            <div class="foodiP4">Welcome to hell...</div>
-          </div>
-          <div><img src="./images/7.png" alt="" /></div>
+        <div class="swiper-slide item3 ">
+         <div class="wrapper3">
+                    <div class="header-content">
+                        <h1 class="header-title" >BEST FOOD</h1>
+                        <p class="header-sub-title ">create your own slogan</p>
+                    </div> <!-- /.header-content -->
+                </div>
         </div>
         ...
       </div>
@@ -146,445 +156,108 @@
     <section id="features">
       <h1 class="cheif-h">Why choose Our Restaurant</h1>
       <div class="row">
-        <div class="col-lg-4" id="feature-box">
+        <div class="col-lg-4"data-tilt id="feature-box" data-aos="fade-right">
+         <div class="feature-sub-box">
           <i class="fas fa-hamburger fa-4x icon"></i>
           <h3>VARIETY & TASTE</h3>
           <p>
             Explore the authentic taste of various food culture from across the
             Country
           </p>
+         </div>
         </div>
-        <div class="col-lg-4" id="feature-box">
-          <i class="fas fa-utensils fa-4x icon"></i>
-          <h3>FRESH & HEALTHY</h3>
-          <p>
-            FoodKa chefs cook and serve what they make for their family and
-            loved ones
-          </p>
+        <div class="col-lg-4"data-tilt id="feature-box" data-aos="fade-up">
+       <div class="feature-sub-box">
+        <i class="fas fa-utensils fa-4x icon"></i>
+        <h3>FRESH & HEALTHY</h3>
+        <p>
+          FoodKa chefs cook and serve what they make for their family and
+          loved ones
+        </p>
+     
+       </div>
+            
         </div>
-        <div class="col-lg-4" id="feature-box">
-          <i class="fas fa-pizza-slice fa-4x icon"></i>
-          <h3>CLEAN & HYGIENIC.</h3>
-          <p>
-            Every FoodKa chef follows the highest standards of hygiene and
-            cleanliness.
-          </p>
+        <div class="col-lg-4"data-tilt id="feature-box" data-aos="fade-left">
+        
+          <div class="feature-sub-box">
+            <!-- <i class="fas fa-pizza-slice fa-4x icon"></i> -->
+            <i class="fas fa-hotdog fa-4x icon"></i>
+            <h3>CLEAN & HYGIENIC.</h3>
+            <p>
+              Every FoodKa chef follows the highest standards of hygiene and
+              cleanliness.
+            </p>
+          </div>
         </div>
       </div>
     </section>
     <!-- feature section end -->
+ <!-- Why choose our resturent start -->
+   <section id="have-a-look">
+      <img
+        class="have-a-look-img"
+        src="./images/icons/food_color.png"
+      />
+        <div class="container-fluid">
+          <div class="row">
+            <div class="menu-gallery" style="width: 50%; float: left" data-aos="zoom-in-down">
+              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+ 
+ 
+  </ol>
+  <div class="carousel-inner"style=" width:100%; height: 500px !important;" >
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="./images/menu-gallery/menu1.png" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="./images/menu-gallery/menu2.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="./images/menu-gallery/menu3.png" alt="Third slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="./images/menu-gallery/menu4.jpg" alt="Four slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="./images/menu-gallery/menu5.jpg" alt="Five slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="./images/menu-gallery/menu6.jpg" alt="Six slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="./images/menu-gallery/menu8.jpg" alt="Seven slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>          
+</div>
 
-    <!-- Menu section start -->
-
-    <section id="product-section">
-      <h1 class="text-center">Dishes</h1>
-      <div class="container" id="container">
-        <!-- Search box -->
-        <div id="search-box">
-          <form class="form-inline search">
-            <input
-              type="text"
-              class="form-control"
-              id="search"
-              placeholder="Search Food"
-            />
-            <button class="btn btn-dark">Search</button>
-          </form>
-        </div>
-        <div class="filter-box">
-          <div class="all">
-            <a href="#" class="btn btn-dark" data-filter="all">All</a>
-            <a href="#" class="btn btn-dark" data-filter="Indian">Indian</a>
-            <a href="#" class="btn btn-dark" data-filter="Deshi">Deshi</a>
-            <a href="#" class="btn btn-dark" data-filter="Curry">Curry</a>
-            <a href="#" class="btn btn-dark" data-filter="Pastry">Pastry</a>
-            <a href="#" class="btn btn-dark" data-filter="Drinks">Drinks</a>
-          </div>
-          <div class="halal">
-            <a href="#" class="btn btn-dark" data-filter="Halal">Halal</a>
-            <a href="#" class="btn btn-dark" data-filter="Non-Halal"
-              >Non-Halal</a
-            >
-          </div>
-        </div>
+<div class="gallery-heading"style="width: 50%; float: right">
+    <h2 class="section-title" data-aos="fade-left">Have A Look To Our Dishes</h2>
+</div>
       </div>
-
-      <div class="slide-container">
-        <section id="store-products">
-          <div class="store-product Indian Halal">
-            <img src="./images/indian (1).jpg" alt="" />
-            <div class="product-details">
-              <h2>Indian</h2>
-              <p><span>$39.99</span> $29.99</p>
-              <button class="btn btn-light">Add to cart</button>
-              <div id="button">
-                <input type="radio" id="half" name="quantity" value="half" />
-                <label for="half">half</label>
-                <input type="radio" id="full" name="quantity" value="full" />
-                <label for="full" id="fullLable">full</label>
-                <button class="sub">-</button>
-                <input
-                  type="text"
-                  id="qtyBox"
-                  class="inputBox"
-                  value="0"
-                  placeholder="quantity"
-                />
-                <button class="add">+</button>
-              </div>
-            </div>
-          </div>
-          <div class="store-product Indian Halal">
-            <img src="./images/indian (6).jpg" alt="" />
-            <div class="product-details">
-              <h2>Indian</h2>
-              <p><span>$39.99</span> $29.99</p>
-              <button class="btn btn-dark">Add to cart</button>
-              <div id="button">
-                <input type="radio" id="half" name="quantity" value="half" />
-                <label for="half">half</label>
-                <input type="radio" id="full" name="quantity" value="full" />
-                <label for="full" id="fullLable">full</label>
-                <button class="sub">-</button>
-                <input
-                  type="text"
-                  id="qtyBox"
-                  class="inputBox"
-                  value="0"
-                  placeholder="quantity"
-                />
-                <button class="add">+</button>
-              </div>
-            </div>
-          </div>
-          <div class="store-product Indian Non-Halal">
-            <img src="./images/indian (5).jpg" alt="" />
-            <div class="product-details">
-              <h2>Indian</h2>
-              <p><span>$39.99</span> $29.99</p>
-              <button class="btn btn-dark">Add to cart</button>
-              <div id="button">
-                <input type="radio" id="half" name="quantity" value="half" />
-                <label for="half">half</label>
-                <input type="radio" id="full" name="quantity" value="full" />
-                <label for="full" id="fullLable">full</label>
-                <button class="sub">-</button>
-                <input
-                  type="text"
-                  id="qtyBox"
-                  class="inputBox"
-                  value="0"
-                  placeholder="quantity"
-                />
-                <button class="add">+</button>
-              </div>
-            </div>
-          </div>
-          <div class="store-product Deshi Halal">
-            <img src="./images/deshi (1).jpg" alt="" />
-            <div class="product-details">
-              <h2>Deshi</h2>
-              <p><span>$39.99</span> $29.99</p>
-              <button class="btn btn-dark">Add to cart</button>
-              <div id="button">
-                <input type="radio" id="half" name="quantity" value="half" />
-                <label for="half">half</label>
-                <input type="radio" id="full" name="quantity" value="full" />
-                <label for="full" id="fullLable">full</label>
-                <button class="sub">-</button>
-                <input
-                  type="text"
-                  id="qtyBox"
-                  class="inputBox"
-                  value="0"
-                  placeholder="quantity"
-                />
-                <button class="add">+</button>
-              </div>
-            </div>
-          </div>
-          <div class="store-product Deshi Halal">
-            <img src="./images/drinks (2).jpg" alt="" />
-            <div class="product-details">
-              <h2>Deshi</h2>
-              <p><span>$39.99</span> $29.99</p>
-              <button class="btn btn-dark">Add to cart</button>
-              <div id="button">
-                <input type="radio" id="half" name="quantity" value="half" />
-                <label for="half">half</label>
-                <input type="radio" id="full" name="quantity" value="full" />
-                <label for="full" id="fullLable">full</label>
-                <button class="sub">-</button>
-                <input
-                  type="text"
-                  id="qtyBox"
-                  class="inputBox"
-                  value="0"
-                  placeholder="quantity"
-                />
-                <button class="add">+</button>
-              </div>
-            </div>
-          </div>
-          <div class="store-product Deshi Halal">
-            <img src="./images/deshi (3).jpg" alt="" />
-            <div class="product-details">
-              <h2>Deshi</h2>
-              <p><span>$39.99</span> $29.99</p>
-              <button class="btn btn-dark">Add to cart</button>
-              <div id="button">
-                <input type="radio" id="half" name="quantity" value="half" />
-                <label for="half">half</label>
-                <input type="radio" id="full" name="quantity" value="full" />
-                <label for="full" id="fullLable">full</label>
-                <button class="sub">-</button>
-                <input
-                  type="text"
-                  id="qtyBox"
-                  class="inputBox"
-                  value="0"
-                  placeholder="quantity"
-                />
-                <button class="add">+</button>
-              </div>
-            </div>
-          </div>
-          <div class="store-product Deshi Non-Halal">
-            <img src="./images/deshi (4).jpg" alt="" />
-            <div class="product-details">
-              <h2>Deshi</h2>
-              <p><span>$39.99</span> $29.99</p>
-              <button class="btn btn-dark">Add to cart</button>
-              <div id="button">
-                <input type="radio" id="half" name="quantity" value="half" />
-                <label for="half">half</label>
-                <input type="radio" id="full" name="quantity" value="full" />
-                <label for="full" id="fullLable">full</label>
-                <button class="sub">-</button>
-                <input
-                  type="text"
-                  id="qtyBox"
-                  class="inputBox"
-                  value="0"
-                  placeholder="quantity"
-                />
-                <button class="add">+</button>
-              </div>
-            </div>
-          </div>
-          <div class="store-product Curry Halal">
-            <img src="./images/curry (1).jpg" alt="" />
-            <div class="product-details">
-              <h2>Curry</h2>
-              <p><span>$39.99</span> $29.99</p>
-              <button class="btn btn-dark">Add to cart</button>
-              <div id="button">
-                <input type="radio" id="half" name="quantity" value="half" />
-                <label for="half">half</label>
-                <input type="radio" id="full" name="quantity" value="full" />
-                <label for="full" id="fullLable">full</label>
-                <button class="sub">-</button>
-                <input
-                  type="text"
-                  id="qtyBox"
-                  class="inputBox"
-                  value="0"
-                  placeholder="quantity"
-                />
-                <button class="add">+</button>
-              </div>
-            </div>
-          </div>
-          <div class="store-product Curry Non-Halal">
-            <img src="./images/curry (10).jpg" alt="" />
-            <div class="product-details">
-              <h2>Curry</h2>
-              <p><span>$39.99</span> $29.99</p>
-              <button class="btn btn-dark">Add to cart</button>
-              <div id="button">
-                <input type="radio" id="half" name="quantity" value="half" />
-                <label for="half">half</label>
-                <input type="radio" id="full" name="quantity" value="full" />
-                <label for="full" id="fullLable">full</label>
-                <button class="sub">-</button>
-                <input
-                  type="text"
-                  id="qtyBox"
-                  class="inputBox"
-                  value="0"
-                  placeholder="quantity"
-                />
-                <button class="add">+</button>
-              </div>
-            </div>
-          </div>
-          <div class="store-product Curry Non-Halal">
-            <img src="./images/curry (14).jpg" alt="" />
-            <div class="product-details">
-              <h2>Curry</h2>
-              <p><span>$39.99</span> $29.99</p>
-              <button class="btn btn-dark">Add to cart</button>
-              <div id="button">
-                <input type="radio" id="half" name="quantity" value="half" />
-                <label for="half">half</label>
-                <input type="radio" id="full" name="quantity" value="full" />
-                <label for="full" id="fullLable">full</label>
-                <button class="sub">-</button>
-                <input
-                  type="text"
-                  id="qtyBox"
-                  class="inputBox"
-                  value="0"
-                  placeholder="quantity"
-                />
-                <button class="add">+</button>
-              </div>
-            </div>
-          </div>
-          <div class="store-product Pastry Halal">
-            <img src="./images/pastry (1).jpg" alt="" />
-            <div class="product-details">
-              <h2>Pastry</h2>
-              <p><span>$39.99</span> $29.99</p>
-              <button class="btn btn-dark">Add to cart</button>
-              <div id="button">
-                <input type="radio" id="half" name="quantity" value="half" />
-                <label for="half">half</label>
-                <input type="radio" id="full" name="quantity" value="full" />
-                <label for="full" id="fullLable">full</label>
-                <button class="sub">-</button>
-                <input
-                  type="text"
-                  id="qtyBox"
-                  class="inputBox"
-                  value="0"
-                  placeholder="quantity"
-                />
-                <button class="add">+</button>
-              </div>
-            </div>
-          </div>
-          <div class="store-product Pastry Halal">
-            <img src="./images/pastry (2).jpg" alt="" />
-            <div class="product-details">
-              <h2>Pastry</h2>
-              <p><span>$39.99</span> $29.99</p>
-              <button class="btn btn-dark">Add to cart</button>
-              <div id="button">
-                <input type="radio" id="half" name="quantity" value="half" />
-                <label for="half">half</label>
-                <input type="radio" id="full" name="quantity" value="full" />
-                <label for="full" id="fullLable">full</label>
-                <button class="sub">-</button>
-                <input
-                  type="text"
-                  id="qtyBox"
-                  class="inputBox"
-                  value="0"
-                  placeholder="quantity"
-                />
-                <button class="add">+</button>
-              </div>
-            </div>
-          </div>
-          <div class="store-product Pastry Halal">
-            <img src="./images/pastry (3).jpg" alt="" />
-            <div class="product-details">
-              <h2>Pastry</h2>
-              <p><span>$39.99</span> $29.99</p>
-              <button class="btn btn-dark">Add to cart</button>
-              <div id="button">
-                <input type="radio" id="half" name="quantity" value="half" />
-                <label for="half">half</label>
-                <input type="radio" id="full" name="quantity" value="full" />
-                <label for="full" id="fullLable">full</label>
-                <button class="sub">-</button>
-                <input
-                  type="text"
-                  id="qtyBox"
-                  class="inputBox"
-                  value="0"
-                  placeholder="quantity"
-                />
-                <button class="add">+</button>
-              </div>
-            </div>
-          </div>
-          <div class="store-product Pastry Non-Halal">
-            <img src="./images/pastry (5).jpg" alt="" />
-            <div class="product-details">
-              <h2>Pastry</h2>
-              <p><span>$39.99</span> $29.99</p>
-              <button class="btn btn-dark">Add to cart</button>
-              <div id="button">
-                <input type="radio" id="half" name="quantity" value="half" />
-                <label for="half">half</label>
-                <input type="radio" id="full" name="quantity" value="full" />
-                <label for="full" id="fullLable">full</label>
-                <button class="sub">-</button>
-                <input
-                  type="text"
-                  id="qtyBox"
-                  class="inputBox"
-                  value="0"
-                  placeholder="quantity"
-                />
-                <button class="add">+</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="store-product Drinks Non-Halal">
-            <img src="./images/drinks (2).jpg" alt="" />
-            <div class="product-details">
-              <h2>Drinks</h2>
-              <p><span>$39.99</span> $29.99</p>
-              <button class="btn btn-dark">Add to cart</button>
-              <div id="button">
-                <input type="radio" id="half" name="quantity" value="half" />
-                <label for="half">half</label>
-                <input type="radio" id="full" name="quantity" value="full" />
-                <label for="full" id="fullLable">full</label>
-                <button class="sub">-</button>
-                <input
-                  type="text"
-                  id="qtyBox"
-                  class="inputBox"
-                  value="0"
-                  placeholder="quantity"
-                />
-                <button class="add">+</button>
-              </div>
-            </div>
-          </div>
-          <div class="store-product Drinks Halal">
-            <img src="./images/drinks (3).jpg" alt="" />
-            <div class="product-details">
-              <h2>Drinks</h2>
-              <p><span>$39.99</span> $29.99</p>
-              <button class="btn btn-dark">Add to cart</button>
-              <div id="button">
-                <input type="radio" id="half" name="quantity" value="half" />
-                <label for="half">half</label>
-                <input type="radio" id="full" name="quantity" value="full" />
-                <label for="full" id="fullLable">full</label>
-                <button class="sub">-</button>
-                <input
-                  type="text"
-                  id="qtyBox"
-                  class="inputBox"
-                  value="0"
-                  placeholder="quantity"
-                />
-                <button class="add">+</button>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container-fluid -->
+      <!-- /.wrapper -->
     </section>
-    <!-- Menu section end -->
-
+ <!-- Why choose our resturent end -->
     <!-- FAQ us start -->
     <section id="questions">
       <!-- title -->
@@ -682,7 +355,7 @@
           <li data-target="#carouselE" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
-          <div class="carousel-item active" style="height: 550px">
+          <div class="carousel-item active" style="height: 550px;width: 100%;">
             <video
               class="video-fluid"
               autoplay
@@ -706,7 +379,7 @@
               <h1 class="vid-heading">Ahhh...Food I Love It.</h1>
             </div>
           </div>
-          <div class="carousel-item" style="height: 550px">
+          <div class="carousel-item" style="height: 550px; width:100% ;">
             <video
               class="video-fluid"
               autoplay
@@ -840,30 +513,38 @@
     </section>
  <!-- Our sheif end -->
  <!-- Contact start -->
-    <section id="contact">
-      <h1 class="contact-h">Contact</h1>
-      <div class="row">
-        <div class="col-lg-6 col-md-6">
-          <div class="mapouter">
-            <div class="gmap_canvas">
-              <iframe
-                width="588"
-                height="483"
-                id="gmap_canvas"
-                src="https://maps.google.com/maps?q=,arambagmotijhel,bangladesh&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                frameborder="0"
-                scrolling="no"
-                marginheight="0"
-                marginwidth="0"
-              ></iframe
-              ><a href="https://soap2day-to.com">soap2day</a><br />
-
-              <a href="https://www.embedgooglemap.net">map embed iframe</a>
-            </div>
+   <section id="contact">
+     <h1 class="contact-h">Contact Us</h1>
+      <div class="row mb-2">
+        <div class="col-lg-4 hol" data-tilt>
+          <div id="contact-div">
+            <i class="fas fa-map-marker-alt  c-icon"></i>
+            <h3>Our Location</h3>
+            <p>123 456 668/ 231 786 989</p>
+            <p>Arambag,Motijhil</p>
+          </div>
+         
+        </div>
+        <div class="col-lg-4 hol " data-tilt>
+          <div id="contact-div">
+            <i class="fas fa-phone-alt  c-icon"></i>
+            <h3>Contact Number</h3>
+            <p>Mobile:1871725809</p>
+            <p>Telephonne:+999467594</p>
           </div>
         </div>
-        <div class="col-lg-6 col-md-6">
-          <form>
+        <div class="col-lg-4  hol" data-tilt>
+          <div id="contact-div">
+            <i class="fas fa-comment-dots c-icon"></i>
+            <h3>Write some words</h3>
+            <p>foodka@gmail.com</p>
+            <p>sjsahan5@gmail.com</p>
+          </div>
+         
+        </div>
+      </div>
+      <div class="row mb-4">
+        <div class="col-lg-4 ">
             <div class="form-group">
               <input
                 style="
@@ -872,62 +553,69 @@
                 "
                 type="email"
                 class="form-control"
-                id="email1"
                 aria-describedby="emailHelp"
-                placeholder="&#xf2bb;  Name"
+                placeholder="&#xf007;  Full Name"
               />
             </div>
-
-            <textarea
-              name=""
-              id=""
-              cols="80"
-              rows="18"
-              placeholder="message"
-            ></textarea>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
         </div>
-      </div>
-    </section>
-   <!-- contact end -->
-    <!-- App coming start -->
-<section id="image">
-    <h1>Some photo of our Resturent</h1>
-<div class="container-fluid">
-  <div class="row"> 
-    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-      <img src="./images/res (1).jpg"  class="img-fluid">
-      <img src="./images/res (2).jpg"class="img-fluid">
- 
-  
-    </div>
-    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-      <img src="./images/res (6).jpg"  class="img-fluid">
-      <img src="./images/res (7).jpg"  class="img-fluid">
-    
- 
- 
-    </div>  
-    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-      <img src="./images/res (11).jpg"  class="img-fluid">
-      <img src="./images/res (12).jpg"class="img-fluid">
- 
-   
-     
-     
-    </div>
-    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-      <img src= "./images/res (16).jpg"   class="img-fluid">
-      <img src= "./images/res (5).jpg"   class="img-fluid">
+        <div class="col-lg-4 ">
+          <div class="form-group">
+            <input
+              style="
+                font-family: cursive, 'Font Awesome 5 Free' !important;
+                font-weight: 900;
+              "
+              type="email"
+              class="form-control"
+            
+              aria-describedby="emailHelp"
+              placeholder="&#xf0e0;  Email Adress"
+            />
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="form-group">
+            <input
+              style="
+                font-family: cursive, 'Font Awesome 5 Free' !important;
+                font-weight: 900;
+              "
+              type="text"
+              class="form-control"
+              aria-describedby="emailHelp"
+              placeholder="&#xf2a0;  Mobile"
+            />
+          </div>
+         
+        </div>
 
-   
-     
+ </div>
+ <div class="row">
+  <div class="col-lg-6">
+    <div class="mapouter">
+      <div class="gmap_canvas">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.4619413489168!2d90.41724176476664!3d23.73090114543833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b85b07698cf5%3A0x4320ccfb188c3ae3!2sArambagh%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1622052605007!5m2!1sen!2sbd" width="588" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+      </div>
     </div>
   </div>
+  <div class="col-lg-6"
+  >
+  <textarea
+   class="form-control"
+        name=""
+        id="text-mgs"
+        cols="30"
+        rows="15"
+        placeholder=" message "
+      ></textarea>
+      <a href="#">
+        <button type="button" class="btn btn-info mt-2">Send</button>
+      </a>
   </div>
-  </section>
-    <!-- App coming end -->
+  </div>
+   </section>
+   <!-- contact end -->
     <!-- footer start -->
 
     <footer class="new_footer_area bg_color">
@@ -1017,7 +705,7 @@
 
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/menu.js"></script>
+    <script src="./js/main.js"></script>
     <script src="./js/js.cookie.js"></script>
     <script src="./js/sweetalert2.all.min.js"></script>
     <script src="./js/typed.js"></script>
@@ -1026,6 +714,14 @@
     <script src="./js/swiper-bundle.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/tYpeDD.js"></script>
+    <script src="./js/tilt.jquery.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+  duration: 2000, // values from 0 to 3000, with step 50ms
+
+});
+  </script>
 
     <script>
       var swiper = new Swiper(".swiper-container", {
@@ -1035,7 +731,7 @@
 
         centeredSlides: true,
         autoplay: {
-          delay: 3000,
+          delay: 4500,
           disableOnInteraction: false,
         },
         pagination: {

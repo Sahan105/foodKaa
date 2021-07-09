@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/dishes.css" />
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="./fontawesome/all.min.css" />
+    <link rel="stylesheet" href="./fontawesome/fontawesome.min.css" />
+    <!-- sweetalert2.css link -->
+    <link rel="stylesheet" href="./css/sweetalert2.min.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg" id="headfirst">
+        <div id="bNav">
+          <a class="nav-link" href="#"
+            ><i class="fas fa-phone-volume fontA"></i
+            ><span class="textF">+8801871725809</span></a
+          >
+          <a class="nav-link" href="#"
+            ><i class="far fa-envelope fontA"></i
+            ><span class="textF">support@foodka.com</span></a
+          >
+        </div>
+        <div>
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                ><i class="fab fa-facebook logo"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="fab fa-instagram logo"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="fab fa-twitter logo"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-dark sticky-top"
+        id="navbar"
+      >
+        <a class="navbar-brand" href="index.html">foodKa</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="dishes.html">Dishes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">Cotact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="adminLogin.html">Admin</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link addToCard" href="#"
+                ><i class="fas fa-shopping-cart"></i
+              ></a>
+              <span id="cartCounter">0</span>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <nav class="navbar navbar-expand-lg" id="headSecond">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link offer" href="#">TODAY OFFER</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link token" href="#">GET TOKEN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="registration.html">BE A MERCHANT</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section id="product-section">
+      <h1 class="text-center">Dishes</h1>
+      <div class="container" id="container">
+        <!-- Search box -->
+        <div id="search-box">
+          <form class="form-inline search">
+            <input
+              type="text"
+              class="form-control"
+              id="search"
+              placeholder="Search Food"
+            />
+            <button class="btn btn-dark">Search</button>
+          </form>
+        </div>
+        <div class="filter-box">
+          <div class="all">
+            <a href="#" class="btn btn-dark" data-filter="all">All</a>
+            <a href="#" class="btn btn-dark" data-filter="Indian">Indian</a>
+            <a href="#" class="btn btn-dark" data-filter="Deshi">Deshi</a>
+            <a href="#" class="btn btn-dark" data-filter="Curry">Curry</a>
+            <a href="#" class="btn btn-dark" data-filter="Pastry">Pastry</a>
+            <a href="#" class="btn btn-dark" data-filter="Drinks">Drinks</a>
+          </div>
+          <div class="halal">
+            <a href="#" class="btn btn-dark" data-filter="Halal">Veg</a>
+            <a href="#" class="btn btn-dark" data-filter="Non-Halal">Non-veg</a>
+          </div>
+        </div>
+      </div>
+      <section id="store-products">
+        <div class="store-product Indian Halal">
+          <img src="./images/indian (1).jpg" alt="" />
+          <div class="product-details">
+            <h2>Indian</h2>
+            <p><span>$39.99</span> $29.99</p>
+
+            <a href="registration.html">
+              <button type="button" class="btn btn-dark addto">
+                Add to cart
+              </button>
+            </a>
+
+            <div id="button">
+              <input type="radio" id="half" name="quantity" value="half" />
+              <label for="half">half</label>
+              <input type="radio" id="full" name="quantity" value="full" />
+              <label for="full" id="fullLable">full</label>
+              <button class="sub">-</button>
+              <input
+                type="text"
+                id="qtyBox"
+                class="inputBox"
+                value="0"
+                placeholder="quantity"
+              />
+              <button class="add">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="store-product Indian Halal">
+          <img src="./images/indian (6).jpg" alt="" />
+          <div class="product-details">
+            <h2>Indian</h2>
+            <p><span>$39.99</span> $29.99</p>
+            <button class="btn btn-dark addto">Add to cart</button>
+            <div id="button">
+              <input type="radio" id="half" name="quantity" value="half" />
+              <label for="half">half</label>
+              <input type="radio" id="full" name="quantity" value="full" />
+              <label for="full" id="fullLable">full</label>
+              <button class="sub">-</button>
+              <input
+                type="text"
+                id="qtyBox"
+                class="inputBox"
+                value="0"
+                placeholder="quantity"
+              />
+              <button class="add">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="store-product Indian Non-Halal">
+          <img src="./images/indian (5).jpg" alt="" />
+          <div class="product-details">
+            <h2>Indian</h2>
+            <p><span>$39.99</span> $29.99</p>
+            <button class="btn btn-dark addto">Add to cart</button>
+            <div id="button">
+              <input type="radio" id="half" name="quantity" value="half" />
+              <label for="half">half</label>
+              <input type="radio" id="full" name="quantity" value="full" />
+              <label for="full" id="fullLable">full</label>
+              <button class="sub">-</button>
+              <input
+                type="text"
+                id="qtyBox"
+                class="inputBox"
+                value="0"
+                placeholder="quantity"
+              />
+              <button class="add">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="store-product Deshi Halal">
+          <img src="./images/deshi (1).jpg" alt="" />
+          <div class="product-details">
+            <h2>Deshi</h2>
+            <p><span>$39.99</span> $29.99</p>
+            <button class="btn btn-dark addto">Add to cart</button>
+            <div id="button">
+              <input type="radio" id="half" name="quantity" value="half" />
+              <label for="half">half</label>
+              <input type="radio" id="full" name="quantity" value="full" />
+              <label for="full" id="fullLable">full</label>
+              <button class="sub">-</button>
+              <input
+                type="text"
+                id="qtyBox"
+                class="inputBox"
+                value="0"
+                placeholder="quantity"
+              />
+              <button class="add">+</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <footer class="new_footer_area bg_color">
+      <div class="new_footer_top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <di
+                v
+                class="f_widget company_widget wow fadeInLeft"
+                data-wow-delay="0.2s"
+                style="
+                  visibility: visible;
+                  animation-delay: 0.2s;
+                  animation-name: fadeInLeft;
+                "
+              >
+                <h3 class="f-title">Get in Touch</h3>
+                <p>Don’t miss any updates of our new Food and Snacks.!</p>
+                <form
+                  action="#"
+                  class="f_subscribe_two mailchimp"
+                  method="post"
+                  novalidate="true"
+                  _lpchecked="1"
+                >
+                  <input
+                    type="text"
+                    name="EMAIL"
+                    class="form-control memail"
+                    placeholder="Email"
+                  />
+                  <button class="btn btn-danger" id="sub" type="submit">
+                    Subscribe
+                  </button>
+                </form>
+              </di>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div
+                class="f_widget about-widget pl_70 wow fadeInLeft"
+                data-wow-delay="0.4s"
+                style="
+                  visibility: visible;
+                  animation-delay: 0.4s;
+                  animation-name: fadeInLeft;
+                "
+              >
+                <h3 class="f-title">Menu</h3>
+                <ul class="list-unstyled f_list">
+                  <li><a href="#">About-Us</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div
+                class="f_widget about-widget pl_70 wow fadeInLeft"
+                data-wow-delay="0.6s"
+                style="
+                  visibility: visible;
+                  animation-delay: 0.6s;
+                  animation-name: fadeInLeft;
+                "
+              >
+                <h3 class="f-title">Contact</h3>
+                <ul class="list-unstyled f_list">
+                  <li>Arambag,Motijhel,Dhaka</li>
+                  <li>FoodKa@gmail.com</li>
+                  <li>+1 5589 55488 55</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer_bg">
+          <div class="footer_bg_one"></div>
+          <div class="footer_bg_two"></div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/dishes.js"></script>
+    <script src="./js/sweetalert2.all.min.js"></script>
+    <script src="./fontawesome/all.min.js"></script>
+    <script src="./fontawesome/fontawesome.min.js"></script>
+  </body>
+</html>
